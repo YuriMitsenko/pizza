@@ -1,0 +1,314 @@
+$colorW: white;
+$colorG: grey;
+$colorY: orange;
+$size: 30px;
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Black.ttf);
+    font-family: "JosefinSans";
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+    font-family: "NothingYouCouldDo-Regular";
+    src: url(../fonts/NothingYouCouldDo-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins";
+}
+
+header {
+    background-color: black;
+    font-family: 'JosefinSans';
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-auto-rows: 70px;
+
+    div {
+
+        div {
+            padding-left: 270px;
+
+            img {
+                width: $size;
+            }
+
+            >span {
+                color: white;
+                font-size: $size;
+            }
+
+            span:nth-child(1) {
+                color: rgba(251, 185, 64, 0.908);
+                font-size: $size*0.5;
+                letter-spacing: 4px
+            }
+
+        }
+    }
+
+}
+
+
+nav {
+    height: $size*2;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    padding: $size/1.5;
+}
+
+#menu1 {
+    background: url("../../img/bg_4.jpg") top center;
+    width: 100%;
+    height: 800px;
+    padding-top: 7%;
+
+    #startblock {
+        >p {
+            text-align: center;
+        }
+
+        p:first-of-type {
+            font-size: 30px;
+            color: $colorW;
+            margin-top: 0;
+        }
+
+        p:last-of-type {
+            font-size: 25px;
+            color: $colorG;
+            margin-top: 0;
+        }
+    }
+
+    #endblock {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        >img {
+            width: 100%;
+        }
+
+        .blocktext {
+            padding: 20px;
+
+            p:first-of-type {
+                font-size: 25px;
+                color: $colorW;
+            }
+
+            p:last-of-type {
+                color: $colorG;
+                font-size: 20px;
+            }
+
+            div {
+                display: flex;
+                height: 50px;
+
+                p:first-of-type {
+                    color: $colorY;
+
+                }
+
+                button {
+                    width: 40%;
+                    height: 50%;
+                    color: $colorW;
+                    border: 1px solid $colorW;
+                    background-color: inherit;
+                    justify-items: center;
+                    margin-top: 19px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+#menu2 {
+    background: url("../../img/bg_4.jpg");
+    width: 100%;
+    height: 800px;
+    padding-top: 7%;
+
+
+
+    >p {
+        text-align: center;
+    }
+
+    >p:first-of-type {
+        font-size: 30px;
+        color: $colorW;
+        margin-top: 0;
+    }
+
+    >p:last-of-type {
+        color: $colorG;
+        font-size: 20px;
+    }
+
+    #pricepizza {
+        width: 75%;
+        // margin: 20px 30px;
+        display: grid;
+        grid-template-columns: 2fr 7fr 2fr 7fr;
+
+        padding: 40px 10%;
+
+        >img {
+            width: 90%;
+            border-radius: 50%;
+        }
+
+        p:first-of-type {
+            font-size: 24px;
+            color: $colorW;
+            grid-column: 1/3;
+            margin-top: 0;
+            text-decoration: underline dotted $colorY;
+            font-family: "JosefinSans";
+        }
+
+        p:last-of-type {
+            color: $colorG;
+            font-size: 20px;
+            grid-column: 1/4;
+            margin-top: 0;
+        }
+
+        p:nth-of-type(2) {
+            color: $colorY;
+        }
+
+        >div {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: repeat(2, 2fr);
+            align-items: flex-start;
+        }
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 0.3fr 2fr; //+
+    background: url("../../img/bg_4.jpg") top center;
+    color: white;
+    justify-items: start;
+    gap: 5px 25px;
+    padding: 30px 10%;
+
+
+    a:nth-of-type(2) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    a:nth-of-type(4) {
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+
+    .firstblockfooter {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    >p:first-of-type {
+        font-size: 25px;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        color: grey;
+    }
+
+    p:nth-of-type(2) {
+
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+    }
+
+    p:nth-of-type(3) {
+        font-size: 15px;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        color: grey;
+    }
+
+    .imagblog {
+        width: 100%;
+        height: 75%;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+    }
+
+    .havequestion {
+        width: 35%;
+        padding: 33%;
+    }
+
+    .servicecolumn {
+        color: grey;
+    }
+
+    #deliliver {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    div {
+        width: 98%;
+        height: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+
+        img.calendar {
+            width: 6%;
+            height: 60%
+        }
+
+        p {
+            color: gray;
+
+        }
+    }
+
+    >img:nth-of-type(3) {
+
+        width: 100%;
+        height: 75%;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+
+    div#logo img {
+        width: 25px;
+        background-color: black;
+        // padding: 10px;
+        border-radius: 6px;
+    }
+
+    #footerend {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        margin: auto;
+        padding-top: 35px;
+    }
+}

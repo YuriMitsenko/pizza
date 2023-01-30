@@ -1,0 +1,413 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Black.ttf);
+  font-family: "JosefinSans";
+  src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+  font-family: "NothingYouCouldDo-Regular";
+  src: url(../fonts/NothingYouCouldDo-Regular.ttf);
+}
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+header {
+  background-color: black;
+  font-family: "JosefinSans";
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-rows: 70px;
+}
+header div div {
+  padding-left: 270px;
+}
+header div div img {
+  width: 30px;
+}
+header div div > span {
+  color: white;
+  font-size: 30px;
+}
+header div div span:nth-child(1) {
+  color: rgba(251, 185, 64, 0.908);
+  font-size: 15px;
+  letter-spacing: 4px;
+}
+
+nav {
+  height: 60px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+section .carousel-inner {
+  width: 100%;
+  height: 900px;
+}
+section #carousel-element1 {
+  width: 100%;
+  height: 900px;
+  background: url("../img/bg_1.jpg") top center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  align-items: center;
+}
+section #carousel-element1 div:nth-child(1) {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-self: center;
+  font-size: 25px;
+}
+section #carousel-element1 div:nth-child(1) > p {
+  font-size: 29px;
+  text-align: end;
+  color: white;
+  grid-column: 1/5;
+}
+section #carousel-element1 div:nth-child(1) > p:nth-of-type(1) {
+  font-size: 30px;
+  color: orange;
+  font-family: "NothingYouCouldDo-Regular";
+  grid-column: 1/5;
+}
+section #carousel-element1 div:nth-child(1) button {
+  width: 90%;
+  height: 53%;
+}
+section #carousel-element1 div:nth-child(1) button:first-of-type {
+  grid-column: 3/3;
+  background-color: orange;
+  border: 1px solid orange;
+}
+section #carousel-element1 div:nth-child(1) button:last-of-type {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+section #carousel-element1 div:nth-child(2) img {
+  width: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section #carousel-element2 {
+  width: 100%;
+  height: 900px;
+  background: url("../img/bg_1.jpg") top center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  align-items: center;
+  justify-items: end;
+}
+section #carousel-element2 div:nth-child(1) img {
+  width: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section #carousel-element2 div:nth-child(2) {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-self: center;
+  font-size: 25px;
+  justify-items: start;
+}
+section #carousel-element2 div:nth-child(2) > p {
+  font-size: 29px;
+  text-align: end;
+  color: white;
+  grid-column: 1/5;
+  text-align: start;
+}
+section #carousel-element2 div:nth-child(2) > p:nth-of-type(1) {
+  font-size: 30px;
+  color: orange;
+  font-family: "NothingYouCouldDo-Regular";
+  grid-column: 1/5;
+}
+section #carousel-element2 div:nth-child(2) button {
+  width: 90%;
+  height: 53%;
+}
+section #carousel-element2 div:nth-child(2) button:first-of-type {
+  grid-column: 1/2;
+  background-color: orange;
+  border: 1px solid orange;
+}
+section #carousel-element2 div:nth-child(2) button:last-of-type {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+section #carousel-element3 {
+  width: 100%;
+  height: 900px;
+  background: url("../img/bg_3.jpg") top center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  align-items: center;
+  justify-items: center;
+  padding: 250px;
+}
+section #carousel-element3 > p {
+  color: white;
+  grid-column: 1/3;
+  text-align: center;
+}
+section #carousel-element3 > p:nth-of-type(1) {
+  font-size: 30px;
+  color: orange;
+  font-family: "NothingYouCouldDo-Regular";
+}
+section #carousel-element3 > p:nth-of-type(2) {
+  font-size: 50px;
+  text-align: center;
+}
+section #carousel-element3 > p:nth-of-type(3) {
+  font-size: 29px;
+  text-align: center;
+}
+section #carousel-element3 button {
+  width: 20%;
+  height: 75%;
+}
+section #carousel-element3 button:first-of-type {
+  background-color: orange;
+  border: 1px solid orange;
+  margin-left: 80%;
+}
+section #carousel-element3 button:last-of-type {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-right: 80%;
+}
+
+aside {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url("../img/bg_2.jpg") top center;
+}
+aside > img {
+  width: 100%;
+  height: 100%;
+}
+aside #firstblock {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+aside #firstblock img {
+  width: 100%;
+  height: 100%;
+}
+aside #secondblock {
+  position: absolute;
+  top: 350px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin: 0;
+  text-align: center;
+}
+aside #secondblock div {
+  width: 160px;
+}
+aside #secondblock div > img {
+  width: 50px;
+  border: 1px solid orange;
+}
+aside #secondblock div > p:nth-child(even) {
+  font-size: 25px;
+  color: orange;
+  padding-top: 10px;
+}
+aside #secondblock div > p:nth-child(odd) {
+  color: white;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  justify-items: center;
+  width: 100%;
+  height: 650px;
+  background: url("../img/bg_4.jpg") top center;
+}
+article #about {
+  width: 85%;
+  height: 90%;
+}
+article #upperblock {
+  color: orange;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+article #upperblock div {
+  border: 2px solid orange;
+  margin: 15px;
+  padding-top: 5px;
+  text-align: center;
+  vertical-align: baseline;
+  align-self: center;
+  justify-self: self-start;
+  width: 75%;
+  height: 75%;
+  font-size: 20px;
+}
+article #upperblock div:first-child {
+  color: black;
+  background-color: orange;
+}
+article #bottomblock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+article #bottomblock img {
+  width: 150px;
+  height: 125px;
+  border-radius: 100%;
+}
+article #bottomblock > div {
+  width: 100%;
+  text-align: center;
+}
+article #bottomblock > div p:first-of-type {
+  color: white;
+  font-size: 25px;
+  font-family: "JosefinSans";
+  text-align: center;
+}
+article #bottomblock > div p:nth-of-type(2) {
+  color: gray;
+  font-size: 21px;
+  text-align: center;
+}
+article #bottomblock > div p:last-of-type {
+  color: orange;
+  font-size: 25px;
+  text-align: center;
+}
+article #bottomblock > div button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 12px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 0.3fr 2fr;
+  grid-template-rows: 2fr repeat(5, 1fr);
+  justify-items: center;
+  background: url("../img/bg_4.jpg") top center;
+  color: white;
+  justify-items: start;
+  gap: 5px 25px;
+  padding: 150px 150px;
+}
+footer a:nth-of-type(2) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+footer a:nth-of-type(4) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+footer .firstblockfooter {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+footer > p:first-of-type {
+  font-size: 25px;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  color: grey;
+}
+footer p:nth-of-type(2) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+footer p:nth-of-type(3) {
+  font-size: 15px;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  color: grey;
+}
+footer .imagblog {
+  width: 100%;
+  height: 100%;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+footer .havequestion {
+  width: 35%;
+  padding: 33%;
+}
+footer .servicecolumn {
+  color: grey;
+}
+footer #deliliver {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+footer div {
+  width: 98%;
+  height: 63%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+footer div img.calendar {
+  width: 6%;
+  height: 60%;
+}
+footer div p {
+  color: gray;
+}
+footer > img:nth-of-type(3) {
+  width: 100%;
+  height: 100%;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+footer div#logo img {
+  width: 25px;
+  background-color: black;
+  border-radius: 6px;
+}
+footer #footerend {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin: auto;
+  padding-top: 35px;
+}/*# sourceMappingURL=home.css.map */
